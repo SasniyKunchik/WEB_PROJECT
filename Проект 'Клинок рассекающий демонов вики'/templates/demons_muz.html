@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Персонаж</h1>
+<p><img src="/static/img/muzan.jpg" width="300" height="300"></p>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        <h3>{{ form.title.label }}: {{ form.title.data }}</h3><br>
+    </p>
+    <p>
+        <h3>{{ form.age.label }}: {{ form.age.data }}</h3><br>
+    </p>
+    <p>
+        <h3>{{ form.status.label }}: {{ form.status.data }}</h3><br>
+    </p>
+    <p>
+        <h3>{{ form.content.label }}: {{ form.content.data }}</h3><br>
+    </p>
+    {{message}}
+</form>
+{% endblock %}

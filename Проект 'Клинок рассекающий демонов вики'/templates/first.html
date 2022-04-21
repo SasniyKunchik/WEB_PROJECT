@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <style>
+   body, .okay {
+    position: relative;
+   }
+   body {
+    margin: 0;
+    height: 100%;
+    background: url(static/img/okay.jpg);
+    background-size: cover;
+   }
+   .okay {
+     margin: 0;
+     height: 100%;
+     background: url(static/img/reg.jpg);
+     background-size: cover;
+   }
+  </style>
+<body>
+    <div class="okay">
+        <h1>Добро пожаловать на проект: 'Клинок рассекающий демонов вики'</h1>
+        <h2>Здесь вы сможете найти информацию по миру аниме "Клинок рассекающий демонов"</h2>
+        <h2>Удачи вам в поисках интересных фактов по нашему любимому аниме :></h2>
+        <a href="/Characters" class="btn btn-warning">
+                    Истребители
+        </a>
+        <a href="/Suzhets" class="btn btn-danger">
+            События
+        </a>
+        <a href="/Demons" class="btn btn-warning">
+            Демоны
+        </a>
+        <a href="/Others" class="btn btn-secondary">
+            Другие персонажи
+        </a>
+        <p><img src="static/img/mizuri.jpg" alt="альтернативный текст"></p>
+    </div>
+</body>
+{% endblock %}
